@@ -39,11 +39,10 @@
     text-align: center;
   }
   .hero .brand {
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    opacity: 0.85;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    opacity: 0.9;
     margin-bottom: 12px;
   }
   .hero h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
@@ -109,7 +108,7 @@
     border-bottom: 1px solid var(--border);
     vertical-align: top;
   }
-  th { font-weight: 650; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  th { font-weight: 650; color: var(--muted); font-size: 13px; letter-spacing: 0.02em; }
   a { color: var(--pink); }
   footer {
     border-top: 1px solid var(--border);
@@ -130,93 +129,89 @@
 </div>
 
 <main>
-  <p class="effective"><strong>Effective date:</strong> 8 June 2026</p>
+  <p class="effective"><strong>Effective date:</strong> June 8, 2026</p>
 
-  <p>Happy BirThey ("the app", "we", "us") is a birthday reminder app built around a
-  simple promise: <strong>your data stays in your iCloud, and we can't even see it.</strong></p>
+  <p>Happy BirThey is a birthday reminder app built on a simple promise:
+  <strong>your data stays in your iCloud, and we can't even see it.</strong></p>
 
-  <p>This policy explains, in plain language, what the app does and does not do with your
+  <p>This page explains, in plain language, what the app does — and doesn't do — with your
   information.</p>
 
   <div class="summary">
     <h2>The short version</h2>
     <ul>
-      <li>We do <strong>not</strong> collect, store, transmit, sell, or share any of your personal data.</li>
-      <li>We do <strong>not</strong> have any servers, accounts, logins, or databases that hold your data.</li>
-      <li>We do <strong>not</strong> use analytics, advertising, tracking, or third-party SDKs.</li>
-      <li>The birthdays, names, photos, and notes you add live <strong>only</strong> on your device and in
-      <strong>your own private iCloud account</strong> — which is controlled by Apple and accessible only
-      to you. The developer has no way to read it.</li>
+      <li>We don't collect, store, sell, or share <strong>any</strong> of your personal data.</li>
+      <li>There are <strong>no servers, no accounts, and no databases</strong> on our side. There's simply nothing that could hold your data.</li>
+      <li>There are <strong>no analytics, no ads, no tracking, and no third-party SDKs</strong> in the app.</li>
+      <li>Every birthday, name, photo, and note you add lives <strong>only on your device and in your own private iCloud</strong> — managed by Apple, accessible only to you. We couldn't read it even if we wanted to.</li>
     </ul>
   </div>
 
-  <h2>What information the app handles</h2>
-  <p>All of the following is created and used <strong>on your device</strong> (and synced through your own
-  private iCloud account). None of it is ever sent to the developer.</p>
+  <h2>What the app keeps track of</h2>
+  <p>Everything below is created and used <strong>on your device</strong>, and synced through your own
+  private iCloud account. None of it ever reaches us.</p>
 
   <table>
-    <tr><th>Information</th><th>Why the app uses it</th><th>Where it is stored</th></tr>
-    <tr><td>Names, birth dates, photos, notes of the people you add</td><td>To show birthdays and send you reminders</td><td>On your device + your private iCloud (CloudKit)</td></tr>
-    <tr><td>Your own name and birthday</td><td>To celebrate your birthday and address you by name</td><td>On your device (local settings only)</td></tr>
-    <tr><td>Your language preference</td><td>To display the app in your chosen language</td><td>On your device (local settings only)</td></tr>
-    <tr><td>Notification permission</td><td>To deliver local birthday reminders</td><td>Managed by iOS</td></tr>
+    <tr><th>Information</th><th>What it's for</th><th>Where it lives</th></tr>
+    <tr><td>The names, birthdays, photos, and notes of people you add</td><td>Showing birthdays and reminding you in time</td><td>Your device + your private iCloud (CloudKit)</td></tr>
+    <tr><td>Your own name and birthday</td><td>Celebrating your day and greeting you by name</td><td>Your device only</td></tr>
+    <tr><td>Your language preference</td><td>Showing the app in your language</td><td>Your device only</td></tr>
+    <tr><td>Notification permission</td><td>Delivering birthday reminders</td><td>Managed by iOS</td></tr>
   </table>
 
-  <p>We, the developer, <strong>never receive a copy</strong> of any of this.</p>
-
-  <h2>iCloud sync (CloudKit)</h2>
-  <p>The app uses Apple's <strong>CloudKit</strong> to keep your birthdays in sync across your own devices.
-  Your records are stored in your <strong>private CloudKit database</strong>, which is part of your
-  personal iCloud account. By design, <strong>the developer cannot access, view, or retrieve
-  data in your private CloudKit database</strong> — only you can, through your own Apple ID.</p>
-  <p>iCloud is provided by Apple and governed by
+  <h2>iCloud sync</h2>
+  <p>The app uses Apple's <strong>CloudKit</strong> to keep your birthdays in sync across your devices.
+  Your records live in your <strong>private CloudKit database</strong> — a part of your personal
+  iCloud account. By design, a developer cannot access, view, or export anything in a
+  user's private database. Only you can, with your own Apple&nbsp;ID.</p>
+  <p>iCloud is operated by Apple under
   <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
   <h2>Photos</h2>
-  <p>When you choose a photo for a person, it is selected through Apple's standard photo
-  picker, which does not grant the app access to your photo library. The single photo you
-  pick is stored with that person's record on your device and in your private iCloud — and
-  nowhere else.</p>
+  <p>When you pick a photo for someone, you do it through Apple's standard photo picker —
+  the app never gets access to your photo library. Only the single photo you choose is
+  saved, alongside that person's entry, on your device and in your private iCloud.</p>
 
   <h2>Notifications</h2>
-  <p>Birthday reminders are <strong>local notifications</strong> scheduled on your device. They are not
-  sent from any server. The app does not send marketing or push messages.</p>
+  <p>Birthday reminders are <strong>local notifications</strong>, scheduled entirely on your device.
+  Nothing is sent from a server, and the app never sends marketing or promotional
+  notifications.</p>
 
-  <h2>What we collect: nothing</h2>
-  <p>The app contains <strong>no analytics, no crash reporting, no advertising, no trackers, and no
-  third-party code</strong>. We do not build a profile of you, and there is no "data collection"
-  to opt out of, because there is none.</p>
+  <h2>Analytics and tracking</h2>
+  <p>There are none. No analytics, no crash reporting, no advertising, no trackers, and no
+  third-party code of any kind. We don't build a profile of you — there's no data
+  collection to opt out of, because there is no data collection.</p>
 
   <h2>Children's privacy</h2>
-  <p>Because the app collects no data at all, it collects no data from children. Anything a
-  child enters stays on their device and in their family's iCloud, like any other personal
-  note.</p>
+  <p>Since the app collects no data from anyone, it collects no data from children either.
+  Whatever a child enters stays on their device and in their family's iCloud, like any
+  other personal note.</p>
 
-  <h2>Keeping and deleting your data</h2>
-  <p>You are always in control:</p>
+  <h2>Deleting your data</h2>
+  <p>You're always in control:</p>
   <ul>
-    <li><strong>Delete a single entry</strong> by removing that person in the app.</li>
-    <li><strong>Delete everything</strong> by deleting the app, which removes its on-device data. To also
-    remove the synced copy, sign in to iCloud settings and clear the app's iCloud data, or
-    delete the app's data from any device signed in to the same Apple ID.</li>
+    <li><strong>Remove one entry</strong> by deleting that person inside the app.</li>
+    <li><strong>Remove everything</strong> by deleting the app, which clears its data from your device.
+    To clear the synced copy too, go to your iCloud settings and delete the app's iCloud
+    data from any device signed in with your Apple&nbsp;ID.</li>
   </ul>
-  <p>Since we hold none of your data, there is nothing for us to delete on our side.</p>
+  <p>Since we never hold any of your data, there's nothing for us to delete on our side.</p>
 
   <h2>Your rights</h2>
-  <p>Privacy laws such as the GDPR (EU) and KVKK (Türkiye) give you rights over your personal
-  data. Because all your data remains under your own control in your device and iCloud, and
-  we never receive it, you can exercise those rights directly — by editing or deleting your
-  data in the app at any time, without needing to contact us.</p>
+  <p>Privacy laws like the GDPR (EU) and KVKK (Türkiye) give you rights over your personal
+  data. Because everything stays on your device and in your own iCloud — and never reaches
+  us — you can exercise those rights directly: edit or delete your data in the app whenever
+  you like, no request needed.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If this policy changes, we will update the effective date above and post the new version
-  at this same address. Material changes will be reflected before they take effect.</p>
+  <p>If this policy ever changes, we'll update the effective date above and publish the new
+  version at this same address before it takes effect.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy? Email <strong><a href="mailto:berkanaslandev@gmail.com">berkanaslandev@gmail.com</a></strong>.</p>
+  <p>Questions? Email <a href="mailto:berkanaslandev@gmail.com">berkanaslandev@gmail.com</a>.</p>
 
   <footer>
-    Happy BirThey is an independent app. It is not affiliated with Apple Inc.
+    Happy BirThey is an independent app and is not affiliated with Apple Inc.
     iCloud and CloudKit are trademarks of Apple Inc.
   </footer>
 </main>

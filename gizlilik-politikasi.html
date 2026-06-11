@@ -39,11 +39,10 @@
     text-align: center;
   }
   .hero .brand {
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    opacity: 0.85;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    opacity: 0.9;
     margin-bottom: 12px;
   }
   .hero h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
@@ -109,7 +108,7 @@
     border-bottom: 1px solid var(--border);
     vertical-align: top;
   }
-  th { font-weight: 650; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  th { font-weight: 650; color: var(--muted); font-size: 13px; letter-spacing: 0.02em; }
   a { color: var(--pink); }
   footer {
     border-top: 1px solid var(--border);
@@ -132,92 +131,88 @@
 <main>
   <p class="effective"><strong>Yürürlük tarihi:</strong> 8 Haziran 2026</p>
 
-  <p>Happy BirThey ("uygulama", "biz"), basit bir söz üzerine kurulu bir doğum günü
-  hatırlatma uygulamasıdır: <strong>verilerin senin iCloud'unda kalır, biz onu göremeyiz bile.</strong></p>
+  <p>Happy BirThey, basit bir sözün üzerine kurulmuş bir doğum günü hatırlatma
+  uygulamasıdır: <strong>verilerin senin iCloud'unda kalır, biz onları göremeyiz bile.</strong></p>
 
-  <p>Bu politika, uygulamanın verilerinle ne yapıp ne yapmadığını sade bir dille açıklar.</p>
+  <p>Bu sayfa, uygulamanın bilgilerinle ne yaptığını — daha doğrusu ne yapmadığını —
+  sade bir dille anlatır.</p>
 
   <div class="summary">
-    <h2>Kısa özet</h2>
+    <h2>Kısaca</h2>
     <ul>
-      <li>Hiçbir kişisel verini <strong>toplamıyor, saklamıyor, aktarmıyor, satmıyor veya paylaşmıyoruz.</strong></li>
-      <li>Verilerini tutan <strong>hiçbir sunucumuz, hesabımız, girişimiz veya veritabanımız yok.</strong></li>
-      <li><strong>Analytics, reklam, takip (tracking) veya üçüncü taraf SDK kullanmıyoruz.</strong></li>
-      <li>Eklediğin doğum günleri, isimler, fotoğraflar ve notlar <strong>yalnızca</strong> senin cihazında ve
-      <strong>kendi özel iCloud hesabında</strong> durur. Bu hesap Apple tarafından yönetilir ve yalnızca
-      sana açıktır. Geliştiricinin bunu okumasının hiçbir yolu yoktur.</li>
+      <li>Hiçbir kişisel verini <strong>toplamıyoruz, saklamıyoruz, satmıyoruz, kimseyle paylaşmıyoruz.</strong></li>
+      <li>Bizim tarafımızda <strong>sunucu da yok, veritabanı da.</strong> Uygulamada hesap açmak ya da üye olmak diye bir şey bile yok.</li>
+      <li>Uygulamada <strong>analitik, reklam, izleme veya üçüncü taraf SDK yok.</strong></li>
+      <li>Eklediğin her doğum günü, isim, fotoğraf ve not <strong>yalnızca senin cihazında ve kendi özel iCloud hesabında</strong> durur. Bu hesabı Apple yönetir ve yalnızca sen erişebilirsin. İstesek de okuyamayız.</li>
     </ul>
   </div>
 
-  <h2>Uygulamanın işlediği bilgiler</h2>
-  <p>Aşağıdakilerin tamamı <strong>cihazında</strong> oluşturulur ve kullanılır (ve kendi özel iCloud
-  hesabın üzerinden senkronize edilir). Hiçbiri geliştiriciye gönderilmez.</p>
+  <h2>Uygulama hangi bilgileri kullanır?</h2>
+  <p>Aşağıdakilerin tamamı <strong>cihazında</strong> oluşturulur ve kullanılır; senkronizasyon da kendi
+  özel iCloud hesabın üzerinden yapılır. Hiçbiri bize ulaşmaz.</p>
 
   <table>
-    <tr><th>Bilgi</th><th>Uygulama neden kullanır</th><th>Nerede saklanır</th></tr>
-    <tr><td>Eklediğin kişilerin adı, doğum tarihi, fotoğrafı, notları</td><td>Doğum günlerini göstermek ve sana hatırlatma yapmak için</td><td>Cihazında + özel iCloud'unda (CloudKit)</td></tr>
-    <tr><td>Kendi adın ve doğum günün</td><td>Doğum gününü kutlamak ve sana adınla seslenmek için</td><td>Yalnızca cihazında (yerel ayarlar)</td></tr>
-    <tr><td>Dil tercihin</td><td>Uygulamayı seçtiğin dilde göstermek için</td><td>Yalnızca cihazında (yerel ayarlar)</td></tr>
-    <tr><td>Bildirim izni</td><td>Yerel doğum günü hatırlatmalarını iletmek için</td><td>iOS tarafından yönetilir</td></tr>
+    <tr><th>Bilgi</th><th>Ne işe yarar</th><th>Nerede durur</th></tr>
+    <tr><td>Eklediğin kişilerin adı, doğum günü, fotoğrafı ve notları</td><td>Doğum günlerini göstermek ve zamanında hatırlatmak</td><td>Cihazında + kendi özel iCloud'unda (CloudKit)</td></tr>
+    <tr><td>Kendi adın ve doğum günün</td><td>Doğum gününü kutlamak ve sana adınla seslenmek</td><td>Yalnızca cihazında</td></tr>
+    <tr><td>Dil tercihin</td><td>Uygulamayı seçtiğin dilde göstermek</td><td>Yalnızca cihazında</td></tr>
+    <tr><td>Bildirim izni</td><td>Doğum günü hatırlatmalarını iletmek</td><td>iOS tarafından yönetilir</td></tr>
   </table>
 
-  <p>Biz, geliştirici olarak, bunların <strong>hiçbirinin bir kopyasını almayız.</strong></p>
-
-  <h2>iCloud senkronizasyonu (CloudKit)</h2>
-  <p>Uygulama, doğum günlerini kendi cihazların arasında senkronize tutmak için Apple'ın
+  <h2>iCloud senkronizasyonu</h2>
+  <p>Uygulama, doğum günlerini cihazların arasında senkron tutmak için Apple'ın
   <strong>CloudKit</strong> servisini kullanır. Kayıtların, kişisel iCloud hesabının bir parçası olan
-  <strong>özel CloudKit veritabanında</strong> saklanır. Tasarımı gereği, <strong>geliştirici senin özel
-  CloudKit veritabanındaki verilere erişemez, onları göremez veya alamaz</strong> — bunu yalnızca
-  sen, kendi Apple Kimliğinle yapabilirsin.</p>
-  <p>iCloud, Apple tarafından sağlanır ve
-  <a href="https://www.apple.com/legal/privacy/">Apple'ın Gizlilik Politikası</a> kapsamındadır.</p>
+  <strong>özel CloudKit veritabanında</strong> durur. CloudKit'in tasarımı gereği, bir geliştirici
+  kullanıcının özel veritabanındaki hiçbir veriye erişemez, onu göremez ve dışarı alamaz.
+  Bunu yalnızca sen, kendi Apple&nbsp;hesabınla yapabilirsin.</p>
+  <p>iCloud, Apple tarafından işletilir ve
+  <a href="https://www.apple.com/legal/privacy/">Apple'ın Gizlilik Politikası</a>'na tabidir.</p>
 
   <h2>Fotoğraflar</h2>
-  <p>Bir kişi için fotoğraf seçtiğinde, bu işlem Apple'ın standart fotoğraf seçicisi üzerinden
-  yapılır; bu seçici uygulamaya fotoğraf kütüphanene erişim vermez. Seçtiğin tek fotoğraf, o
-  kişinin kaydıyla birlikte cihazında ve özel iCloud'unda saklanır — başka hiçbir yerde
-  değil.</p>
+  <p>Bir kişiye fotoğraf eklerken Apple'ın standart fotoğraf seçicisini kullanırsın — bu
+  seçici, uygulamaya fotoğraf kütüphanene erişim vermez. Yalnızca seçtiğin o tek fotoğraf,
+  o kişinin kaydıyla birlikte cihazında ve özel iCloud'unda saklanır.</p>
 
   <h2>Bildirimler</h2>
-  <p>Doğum günü hatırlatmaları, cihazında zamanlanan <strong>yerel bildirimlerdir</strong>. Herhangi bir
-  sunucudan gönderilmezler. Uygulama pazarlama veya tanıtım bildirimi göndermez.</p>
+  <p>Doğum günü hatırlatmaları, tamamen cihazında zamanlanan <strong>yerel bildirimlerdir</strong>.
+  Hiçbir sunucudan gönderilmezler. Uygulama pazarlama ya da tanıtım amaçlı bildirim
+  göndermez.</p>
 
-  <h2>Topladığımız veri: hiçbir şey</h2>
-  <p>Uygulamada <strong>hiçbir analytics, çökme raporlama, reklam, izleyici veya üçüncü taraf kod
-  yoktur.</strong> Senin hakkında bir profil oluşturmayız ve "veri toplama"dan çıkış yapmana gerek
-  yoktur, çünkü ortada hiç veri toplama yoktur.</p>
+  <h2>Analitik ve izleme</h2>
+  <p>Yok. Ne analitik var, ne çökme raporu, ne reklam, ne izleme kodu, ne de herhangi bir
+  üçüncü taraf yazılımı. Hakkında bir profil oluşturmuyoruz. "Veri toplamayı reddetme"
+  diye bir seçeneğe de gerek yok — çünkü ortada toplanan bir veri yok.</p>
 
   <h2>Çocukların gizliliği</h2>
-  <p>Uygulama hiçbir veri toplamadığı için, çocuklardan da hiçbir veri toplamaz. Bir çocuğun
-  girdiği her şey, tıpkı diğer kişisel notlar gibi, kendi cihazında ve ailesinin iCloud'unda
-  kalır.</p>
+  <p>Uygulama kimseden veri toplamadığı için çocuklardan da toplamaz. Bir çocuğun girdiği
+  her şey, diğer tüm kişisel notlar gibi kendi cihazında ve ailesinin iCloud'unda kalır.</p>
 
-  <h2>Verilerini saklama ve silme</h2>
+  <h2>Verilerini silmek</h2>
   <p>Kontrol her zaman sende:</p>
   <ul>
-    <li><strong>Tek bir kaydı sil:</strong> Uygulamada o kişiyi kaldırarak.</li>
-    <li><strong>Her şeyi sil:</strong> Uygulamayı silerek cihazdaki verilerini kaldırırsın. Senkronize
-    kopyayı da kaldırmak için iCloud ayarlarından uygulamanın iCloud verisini temizleyebilir
-    ya da aynı Apple Kimliğine bağlı herhangi bir cihazdan uygulamanın verisini silebilirsin.</li>
+    <li><strong>Tek bir kaydı silmek için</strong> uygulamada o kişiyi silmen yeterli.</li>
+    <li><strong>Her şeyi silmek için</strong> uygulamayı sil; cihazdaki tüm verisi kaldırılır.
+    iCloud'daki senkron kopyayı da silmek istersen, Apple hesabına bağlı herhangi bir
+    cihazda iCloud ayarlarından uygulamanın iCloud verisini silebilirsin.</li>
   </ul>
-  <p>Verinin hiçbirini biz tutmadığımız için, bizim tarafımızda silinecek bir şey yoktur.</p>
+  <p>Verilerinin hiçbiri bizde olmadığı için, bizim tarafımızda silinecek bir şey de yok.</p>
 
   <h2>Hakların</h2>
-  <p>KVKK (Türkiye) ve GDPR (AB) gibi gizlilik yasaları, kişisel verilerin üzerinde sana haklar
-  tanır. Tüm verilerin kendi cihazında ve iCloud'unda, senin kontrolünde kaldığı ve biz
-  hiçbir zaman bunları almadığımız için, bu hakları doğrudan kendin kullanabilirsin —
-  verilerini uygulamada dilediğin an düzenleyerek veya silerek, bize başvurmana gerek
-  kalmadan.</p>
+  <p>KVKK (Türkiye) ve GDPR (AB) gibi yasalar, kişisel verilerin üzerinde sana haklar tanır.
+  Tüm verilerin kendi cihazında ve kendi iCloud'unda, tamamen senin kontrolünde olduğu için
+  bu hakları doğrudan kendin kullanabilirsin: verilerini dilediğin an uygulama içinden
+  düzenler ya da silersin, bize başvurmana gerek kalmaz.</p>
 
   <h2>Bu politikadaki değişiklikler</h2>
-  <p>Bu politika değişirse, yukarıdaki yürürlük tarihini günceller ve yeni sürümü yine bu
-  adreste yayımlarız. Önemli değişiklikler yürürlüğe girmeden önce burada yansıtılır.</p>
+  <p>Bu politika değişirse, yukarıdaki yürürlük tarihini günceller ve yeni sürümü yürürlüğe
+  girmeden önce yine bu adreste yayımlarız.</p>
 
   <h2>İletişim</h2>
-  <p>Bu politikayla ilgili sorular için: <strong><a href="mailto:berkanaslandev@gmail.com">berkanaslandev@gmail.com</a></strong>.</p>
+  <p>Aklına takılan bir şey mi var? Yaz bize:
+  <a href="mailto:berkanaslandev@gmail.com">berkanaslandev@gmail.com</a></p>
 
   <footer>
-    Happy BirThey bağımsız bir uygulamadır. Apple Inc. ile bağlantılı değildir.
+    Happy BirThey bağımsız bir uygulamadır; Apple Inc. ile bir bağlantısı yoktur.
     iCloud ve CloudKit, Apple Inc.'in ticari markalarıdır.
   </footer>
 </main>
